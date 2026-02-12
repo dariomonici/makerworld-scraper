@@ -8,7 +8,7 @@ Usage:
 
 Outputs (saved in ./output/ directory):
  - profile_data.json - Structured profile data
- - page.html - Full HTML of the page (for debugging)
+ - profile_page.html - Full HTML of the page (for debugging)
  - debug_elements.json - Debug info about found elements
 
 Installation:
@@ -78,7 +78,7 @@ async def scrape_profile(url, out_path=None, timeout=60000):
         
         # Save HTML for debugging AFTER scrolling and waiting
         html = await page.content()
-        html_path = output_dir / 'page.html'
+        html_path = output_dir / 'profile_page.html'
         html_path.write_text(html, encoding='utf-8')
         print(f'💾 HTML saved to {html_path}')
         
