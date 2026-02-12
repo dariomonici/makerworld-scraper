@@ -1,6 +1,7 @@
 name: CI - Run makerworld scraper
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - 'scripts/**'
