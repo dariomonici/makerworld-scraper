@@ -30,4 +30,4 @@ jobs:
       - name: Run makerworld scraper
         working-directory: ./scripts
         run: |
-          python scrape_profile.py
+          python scrape_profile.py https://makerworld.com/en/@darionji
